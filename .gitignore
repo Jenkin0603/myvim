@@ -1,0 +1,6 @@
+bundle/*
+sessions
+
+.netrwhist
+.netrwhist~
+*.swp
