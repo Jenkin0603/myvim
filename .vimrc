@@ -103,3 +103,14 @@ if !exists('s:loaded_my_vimrc')
 endif
 set tags=./tags,tags;$HOME
 set autochdir
+set nu
+" map list open files on the left
+map <F3> :NERDTreeMirror<CR>
+map <F3> :NERDTreeToggle<CR>
+map <F4> :Tagbar<CR>
+"nmap <silent> <F3> :NERDTreeToggle<CR>
+autocmd VimEnter * NERDTree
+autocmd BufEnter * NERDTreeMirror
+autocmd VimEnter * wincmd w
+"autocmd VimEnter * Tagbar
+"autocmd BufEnter * Tagbar
