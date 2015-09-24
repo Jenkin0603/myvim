@@ -114,3 +114,4 @@ autocmd BufEnter * NERDTreeMirror
 autocmd VimEnter * wincmd w
 "autocmd VimEnter * Tagbar
 "autocmd BufEnter * Tagbar
+set foldmethod=indent
