@@ -105,8 +105,9 @@ set tags=./tags,tags;$HOME
 set autochdir
 set nu
 " map list open files on the left
-map <F3> :NERDTreeMirror<CR>
-map <F3> :NERDTreeToggle<CR>
+"map <F3> :NERDTreeMirror<CR>
+"map <F3> :NERDTreeToggle<CR>
+map <F3> :NERDTree<CR>
 map <F4> :Tagbar<CR>
 "nmap <silent> <F3> :NERDTreeToggle<CR>
 autocmd VimEnter * NERDTree
