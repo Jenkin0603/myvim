@@ -7,13 +7,13 @@ filetype off
 " Credit:  http://www.erikzaadi.com/2012/03/19/auto-installing-vundle-from-your-vimrc/
 let iCanHazNeoBundle=1
 let neobundle_readme=expand('~/.vim/bundle/neobundle.vim/README.md')
-if !filereadable(neobundle_readme)
+if !filereadable(neobundle_readme)    #if condition starts from here
   echo "Installing neobundle.vim."
   echo ""
   silent !mkdir -p ~/.vim/bundle
   silent !git clone https://github.com/Shougo/neobundle.vim ~/.vim/bundle/neobundle.vim
   let iCanHazNeoBundle=0
-endif
+endif                              #endif
 
 set rtp+=~/.vim/bundle/neobundle.vim/
 
